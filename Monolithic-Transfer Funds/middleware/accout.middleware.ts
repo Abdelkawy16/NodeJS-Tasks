@@ -11,9 +11,7 @@ export const checkAccountExists =  async (req, res, next)=> {
         } else {
             if (await result.rows.length > 0) {
                 res.locals.balance = await result.rows[0].balance;
-                res.status(400).send({
-                    message: 'Account already exists'
-                });
+                console.log('Account exists');
                 next();
             } else {
                 return res.status(404).send({
