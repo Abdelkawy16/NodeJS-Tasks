@@ -1,6 +1,18 @@
-# 🚀 Welcome to your new awesome project!
+# This is simple Monolotic Application!
+This application implements financial transaction from one account to another
 
-Create DB then excute these queries
+## Features
+This Application has one REST API to transfer money from one account to another
+
+## Technologies Used
+- ExpressJS
+- PostgreSQL
+- NodeJS
+
+## Get Started
+- Clone this repository to your local machine.
+
+- Create DB FundTransfer then excute these queries
 
 ```
 CREATE TABLE accounts (
@@ -12,13 +24,12 @@ INSERT INTO accounts (account_number, balance)
 VALUES ('123456789', 1000.00), ('987654321', 500.00);
 ```
 
-
-
-You can now run
+- You can now run
 
 ```
 npm install
 ```
+to install packages
 
 then
 
@@ -27,5 +38,3 @@ npm run dev
 ```
 
 to bundle your application
-
---curl -X POST -H "Content-Type: application/json" -d '{"sourceAccount": "123456789", "destinationAccount": "987654321", "amount": 100}' http://localhost:3000/transfer

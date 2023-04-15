@@ -1,6 +1,6 @@
 require("dotenv").config();
 import express from "express";
-import { accountRouter } from "../routes/account.router";
+import { accountRouter } from "./routes/account.router";
 
 const app = express();
 app.use(express.json());

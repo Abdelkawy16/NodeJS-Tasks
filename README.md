@@ -1,1 +1,9 @@
-# 🚀 Welcome to my Software Architecture tasks Repository 😎
+# this is Software Architecture tasks
+
+## Tasks
+- Refactoring Monolithic Application
+
+## Technologies used
+- express
+- nodejs
+- postgresql
