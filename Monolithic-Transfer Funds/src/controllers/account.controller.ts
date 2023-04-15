@@ -1,7 +1,6 @@
-import { pool } from "../db/dbConnection";
-import { DatabaseService } from "../services/database.service";
+import { DatabaseService } from "../db/dbConnection";
 
-const databaseService = new DatabaseService(pool);
+const databaseService = new DatabaseService();
 
 // transfer funds
 export const transferFunds = async (req, res) => {

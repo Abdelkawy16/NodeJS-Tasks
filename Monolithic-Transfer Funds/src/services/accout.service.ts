@@ -1,7 +1,6 @@
-import {pool} from '../db/dbConnection';
-import { DatabaseService } from './database.service';
+import {DatabaseService} from '../db/dbConnection';
 
-const databaseService = new DatabaseService(pool);
+const databaseService = new DatabaseService();
 
 // check if account exists
 export const checkAccountsExist =  async (req, res, next)=> {
